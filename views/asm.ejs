@@ -1,0 +1,202 @@
+<%- include('navbar-footer/navbar') %>
+
+
+  <div class="hero-container">
+    <h1 class="main-text">
+      <span class="inner-text">Attack Surface Management</span> Platform
+    </h1>
+    <p class="small-text">
+      Gain a complete and dynamic view of your organization's attack surface with real-time monitoring and continuous
+      discovery
+    </p>
+
+    <div class="mid-Btn">
+      <a href="#ytube">
+        <div class="tutorial-btn">
+          <p>Watch Tutorial</p>
+
+        </div>
+      </a>
+      <a href="/contact-us"><button class="btn">
+          <span>Talk To Expert</span>
+        </button></a>
+    </div>
+
+    <img height="800px" class="dashboard-img" src="/public/images/csm-dash.jpg">
+    <div class="wave-svg">
+      <img src="/public/images/wave.png">
+    </div>
+  </div>
+
+
+
+  <!-- background/public/images -->
+
+
+  <div class="eclips1">
+
+  </div>
+
+  <div class="eclips2">
+
+  </div>
+
+  <div class="eclips3">
+
+  </div>
+
+  <div class="eclips4">
+
+  </div>
+
+  <div class="eclips4">
+
+  </div>
+
+  <div class="eclips5">
+
+  </div>
+
+  <div class="product-eclips1">
+
+  </div>
+
+
+  <div class="product-eclips2">
+
+  </div>
+
+  <div class="product-eclips3">
+
+  </div>
+
+
+  <div class="product-eclips4">
+
+  </div>
+
+  <div class="testimonials">
+    <h1 class="testimonials-heading">
+      Easily <span class="inner-text">Monitor, Analyze, and Fortify <br></span> your attack surface.
+
+    </h1>
+    <p class="testimonials-text">
+      An enterprise SaaS built to deliver powerful and flexible vulnerability scanning.
+    </p>
+  </div>
+
+
+
+
+  <div class="product">
+    <div class="side-cards">
+      <div class="product-card1">
+        <div>
+          <img src="/public/images/product/1.svg">
+        </div>
+        <div>
+          <h3>Shadow Asset Detection</h3>
+          <p> Uncover hidden or unauthorized assets within your network, ensuring comprehensive visibility and
+            mitigating potential security risks.</p>
+        </div>
+      </div>
+      <div class="product-card2">
+        <div>
+          <h3>Credential and Secret Leak Monitoring</h3>
+          <p>Proactively track and manage potential leaks of credentials and secrets, fortifying your security posture
+            and minimizing the risk of unauthorized access.</p>
+        </div>
+        <div>
+          <img src="/public/images/product/2.svg">
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card3">
+      <img src="/public/images/product/3.svg">
+      <h3>Vulnerability Scanning</h3>
+      <p>Conduct thorough scans of your assets, identifying and prioritizing over a thousand known vulnerabilities</p>
+    </div>
+  </div>
+
+  <!-- Testimonials  -->
+
+
+
+
+
+  <%- include('navbar-footer/testimonial') %>
+
+
+
+
+
+
+    <!-- Youtube video here -->
+
+    <div class="testimonials">
+      <h1 class="testimonials-heading">
+        A quick guide to <span class="inner-text">Disruptive Features</span><br> ASM has to offer
+      </h1>
+      <p class="testimonials-text">
+        An enterprise SaaS built to deliver powerful and flexible vulnerability Management.
+      </p>
+    </div>
+
+
+    <div id="ytube" class="youtube-video">
+      <iframe width="940" height="506" src="https://www.youtube.com/embed/cPqQbIprns0?modestbranding=1&controls=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
+    </div>
+
+    <!-- Schudule Card -->
+
+
+    <div class="schudule-card">
+      <img class="bg-img" src="/public/images/wave2.png">
+      <p class="schudule-text">
+        Don't Wait for a Breach! Schedule a Free <span class="inner-text"> Cybersecurity </span> Consultation Today.
+      </p>
+      <div class="btn">
+        <p class="text">Talk To Expert</p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <%- include('navbar-footer/footer') %>
+
+      <!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var animatedElements = document.querySelectorAll('.animatedElement');
+
+    var observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          console.log("observed")
+
+          
+          // entry.target.classList.add('active');
+          // observer.unobserve(entry.target);
+          
+          entry.target.classList.forEach(c=>{
+            if(c.includes('_')){
+              newClass=c.split('_')[0]
+              entry.target.classList.remove(c)
+              entry.target.classList.add(newClass)
+            }
+          })
+        
+        
+        
+        }
+      });
+    }, { threshold: 0.2 });
+
+    animatedElements.forEach(function(element) {
+      observer.observe(element);
+    });
+  });
+</script> -->

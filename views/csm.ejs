@@ -1,0 +1,207 @@
+<%- include('navbar-footer/navbar') %>
+
+
+  <div class="hero-container">
+    <h1 class="main-text">
+      Continuious <span class="inner-text">Security</span> <br>Management platform.
+    </h1>
+    <p class="small-text">
+      SnapSec's Comprehensive Security Management System equips organizations with robust vulnerability management,<br>
+      collaborative access control, and streamlined security processes, ensuring effective risk mitigation.
+    </p>
+
+    <div class="mid-Btn">
+      <a href="#ytube">
+        <div class="tutorial-btn">
+          <p>Watch Tutorial</p>
+
+        </div>
+      </a>
+      <a href="/contact-us"><button class="btn">
+          <span>Talk To Expert</span>
+        </button></a>
+    </div>
+
+    <img height="800px" class="dashboard-img" src="/public/images/csm-dash.jpg">
+    <div class="wave-svg">
+      <img src="/public/images/wave.png">
+    </div>
+  </div>
+
+
+
+  <!-- background/public/images -->
+
+
+  <div class="eclips1">
+
+  </div>
+
+  <div class="eclips2">
+
+  </div>
+
+  <div class="eclips3">
+
+  </div>
+
+  <div class="eclips4">
+
+  </div>
+
+  <div class="eclips4">
+
+  </div>
+
+  <div class="eclips5">
+
+  </div>
+
+  <div class="product-eclips1">
+
+  </div>
+
+
+  <div class="product-eclips2">
+
+  </div>
+
+  <div class="product-eclips3">
+
+  </div>
+
+
+  <div class="product-eclips4">
+
+  </div>
+
+  <div class="testimonials">
+    <h1 class="testimonials-heading">
+      Now Manage collaborate , and Remidiate <br>vulnerabilities <span class="inner-text">seamlessly.</span>
+    </h1>
+    <p class="testimonials-text">
+      An enterprise SaaS built to deliver powerful and flexible vulnerability scanning.
+    </p>
+  </div>
+
+
+
+
+  <div class="product">
+    <div class="side-cards">
+      <div class="product-card1">
+        <div>
+          <img src="/public/images/product/1.svg">
+        </div>
+        <div>
+          <h3>Unified Vulnerability Dashboard</h3>
+          <p>A unified vulnerability dashboard provides a consolidated view of all identified vulnerabilities across the
+            organization, enabling swift decision-making through a comprehensive overview.</p>
+        </div>
+      </div>
+      <div class="product-card2">
+        <div>
+          <h3>Collaborative Vulnerability Management Access </h3>
+          <p>Promoting effective teamwork, our collaborative access feature encourages knowledge sharing for a
+            comprehensive understanding and ensures controlled information sharing with selective access, facilitating
+            efficient vulnerability resolution. </p>
+        </div>
+        <div>
+          <img src="/public/images/product/2.svg">
+        </div>
+      </div>
+    </div>
+
+    <div class="product-card3">
+      <img src="/public/images/product/3.svg">
+      <h3>Calculate Growth</h3>
+      <p>Our ASM Platform, which not only helps at basically a comprehensive management platform for all customers and
+        deals within a business. The various functionalities of zendesk. An enterprise SaaS built to deliver powerful
+        and flexible vulnerability scanning.</p>
+    </div>
+  </div>
+
+  <!-- Testimonials  -->
+
+
+
+
+
+  <%- include('navbar-footer/testimonial') %>
+
+
+
+
+
+
+    <!-- Youtube video here -->
+
+    <div class="testimonials">
+      <h1 class="testimonials-heading">
+        A quick guide to <span class="inner-text">Disruptive Features</span><br> ASM has to offer
+      </h1>
+      <p class="testimonials-text">
+        An enterprise SaaS built to deliver powerful and flexible vulnerability Management.
+      </p>
+    </div>
+
+
+    <div id="ytube" class="youtube-video">
+      <iframe width="940" height="506" src="https://www.youtube.com/embed/cPqQbIprns0?modestbranding=1&controls=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
+    </div>
+
+    <!-- Schudule Card -->
+
+
+    <div class="schudule-card">
+      <img class="bg-img" src="/public/images/wave2.png">
+      <p class="schudule-text">
+        Don't Wait for a Breach! Schedule a Free <span class="inner-text"> Cybersecurity </span> Consultation Today.
+      </p>
+      <div class="btn">
+
+        <a href="/contact-us">
+          <p class="text">Talk To Expert</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <%- include('navbar-footer/footer') %>
+
+      <!-- <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var animatedElements = document.querySelectorAll('.animatedElement');
+
+    var observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          console.log("observed")
+
+          
+          // entry.target.classList.add('active');
+          // observer.unobserve(entry.target);
+          
+          entry.target.classList.forEach(c=>{
+            if(c.includes('_')){
+              newClass=c.split('_')[0]
+              entry.target.classList.remove(c)
+              entry.target.classList.add(newClass)
+            }
+          })
+        
+        
+        
+        }
+      });
+    }, { threshold: 0.2 });
+
+    animatedElements.forEach(function(element) {
+      observer.observe(element);
+    });
+  });
+</script> -->

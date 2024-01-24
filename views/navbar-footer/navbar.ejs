@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" href="/public/images/logo.svg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Josefin+Sans:wght@100;400;500&family=Plus+Jakarta+Sans:wght@500;700&display=swap"
+    rel="stylesheet">
+  <title>Snapsec - Your Security, Centralized</title>
+  <link rel="stylesheet" type="text/css" href="/public/style.css">
+  <script src="https://kit.fontawesome.com/ac1e998d8e.js" crossorigin="anonymous"></script>
+</head>
+
+<script>
+  function setActiveClass() {
+    var currentUrl = window.location.pathname;
+
+    var links = document.querySelectorAll('.main-manu a');
+    links.forEach(function (link) {
+      link.classList.remove('active');
+    });
+
+    links.forEach(function (link) {
+      var href = link.getAttribute('href');
+      if (href === currentUrl) {
+        link.classList.add('active');
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', setActiveClass);
+</script>
+
+
+<body class="lazy-load-animations">
+  <div class="desktop">
+    <nav class="desktop-nav">
+      <div class="logo">
+        <a href="#" class="image">
+          <img src="/public/images/logo.svg" alt="" />
+        </a>
+        <p class="logo-text">Snapsec</p>
+      </div>
+
+      <ul class="main-manu">
+        <li>
+          <a href="/" class="active">Home</a>
+        </li>
+
+        <li>
+          <a href="/products/csm">Product</a>
+        </li>
+
+        <li>
+          <a href="/services">Service</a>
+        </li>
+
+        <li>
+          <a href="https://snapsec.co/blog" target="_blank">Blog</a>
+        </li>
+
+        <li>
+          <a href="/contact-us">Contact Us</a>
+        </li>
+      </ul>
+
+      <a href="contact-us"><button class="btn">
+          Get Started
+        </button></a>
+    </nav>
